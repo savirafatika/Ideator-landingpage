@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.custom-nav .navbar-brand img {
+  width: 18px;
+  height: 18px;
+  margin-top: -3px;
+}
+
+.custom-nav .navbar-brand span {
+  color: #142333;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 0.3em;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #142333;
+  font-weight: 500;
+  margin-left: 2.4em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #005fea;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .contact-us {
+  color: #1fa5f8;
+}
+
+.custom-section {
+  margin-top: 17vmax;
+}
+
+.custom-section::before {
+  content: '';
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 48vmax;
+  background-position-y: 8vmax;
+  position: absolute;
+  top: 4.5vmax;
+  left: 0;
+  right: 12vmax;
+  bottom: 0;
+}
+
+.custom-section h2 {
+  font-weight: 800;
+  font-size: 4rem;
+  color: #142333;
+  white-space: nowrap;
+  line-height: 0.8;
+}
+
+.custom-section h3 {
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #1fa5f8;
+  line-height: 0.8;
+}
+
+.custom-section p {
+  color: #142333;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2.1em;
+}
+
+.custom-section a {
+  display: inline-block;
+  color: white;
+  background-color: #1fa5f8;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  margin-top: 2.2em;
+  border: 2px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-section a:hover {
+  color: #005fea;
+  border: 2px solid #1fa5f8;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  .custom-section {
+    margin-top: 6em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3.3em;
+    text-align: center;
+  }
+  .custom-section::before {
+    top: 3.5vmax;
+    right: 4vmax;
+    opacity: 0.5;
+  }
+  .custom-section h2,
+  .custom-section h3,
+  .custom-section p {
+    text-shadow: 1px 1px 1px rgba(20, 35, 51, 0.4);
+  }
+}
+/*# sourceMappingURL=main.css.map */

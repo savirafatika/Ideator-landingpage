@@ -1,0 +1,120 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+// Styles
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+// Navigation / navbar
+.custom-nav {
+   .navbar-brand {
+      img {
+         width: 18px;
+         height: 18px;
+         margin-top: -3px;
+      }
+      span {
+         color: $textColor;
+         font-weight: 700;
+         font-size: 1.4rem;
+         margin-left: 0.3em;
+      }
+   }
+
+   #navbarNav {
+      .navbar-nav {
+         .nav-item {
+            .nav-link {
+               color: $textColor;
+               font-weight: 500;
+               margin-left: 2.4em;
+               transition: 0.3s color ease;
+
+               &:hover {
+                  color: $primaryColor;
+               }
+            }
+            .contact-us {
+               color: $tertiaryColor;
+            }
+         }
+      }
+   }
+}
+
+// custom section
+.custom-section {
+   margin-top: 14vmax;
+
+   &::before {
+      content: '';
+      background-image: url(../img/bg.png);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 48vmax;
+      background-position-y: 8vmax;
+      position: absolute;
+      top: 4.5vmax;
+      left: 0;
+      right: 12vmax;
+      bottom: 0;
+   }
+
+   h2 {
+      font-weight: 800;
+      font-size: 4rem;
+      color: $textColor;
+      white-space: nowrap;
+      line-height: 0.8;
+   }
+
+   h3 {
+      font-weight: 500;
+      font-size: 3.5rem;
+      color: $tertiaryColor;
+      line-height: 0.8;
+   }
+
+   p {
+      color: $textColor;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-top: 2.1em;
+   }
+   
+   a {
+      @include tombol;
+      margin-top: 2.2em;
+      border: 2px solid transparent;
+      transition: 0.5s ease;
+
+      &:hover {
+         color: $primaryColor;
+         border: 2px solid $tertiaryColor;
+         background-color: transparent;
+      }
+   }
+
+   @media screen and (max-width: 1200px) {
+      margin-top: 6em;
+   }
+
+   @media screen and (max-width: 992px) {
+      &::before {
+         top: 3.5vmax;
+         right: 4vmax;
+         opacity: 0.5;
+      }
+
+      margin-top: 3.3em;
+      text-align: center;
+
+      h2,
+      h3,
+      p {
+         text-shadow: 1px 1px 1px rgba($textColor, 0.4);
+      }
+   }
+}
