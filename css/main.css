@@ -33,7 +33,7 @@ body {
 }
 
 .custom-section {
-  margin-top: 17vmax;
+  margin-top: 14vmax;
 }
 
 .custom-section::before {
@@ -112,5 +112,56 @@ body {
   .custom-section p {
     text-shadow: 1px 1px 1px rgba(20, 35, 51, 0.4);
   }
+}
+
+#about {
+  margin-top: 20vmax;
+  text-align: center;
+}
+
+#about h1 {
+  padding-top: 2em;
+  font-weight: 600;
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, from(#142333), to(#005fea));
+  background: linear-gradient(to right, #142333, #005fea);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#about .row {
+  margin-top: 3em;
+}
+
+#about .row .col {
+  margin: 2rem;
+  padding: 1em 2.5em;
+  border-radius: 1.5rem;
+  border: 2px solid #005fea;
+}
+
+#about .row .col:hover {
+  -webkit-box-shadow: 5px 5px #1fa5f8;
+          box-shadow: 5px 5px #1fa5f8;
+  -webkit-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+}
+
+#about .row .col img {
+  width: 100%;
+}
+
+#about .row .col p {
+  color: #142333;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#about .quotes {
+  margin-top: 3em;
+  font-weight: 500;
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */

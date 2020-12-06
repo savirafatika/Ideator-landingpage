@@ -7,3 +7,9 @@
    padding: 0.5em 2em;
    text-decoration: none;
 }
+
+@mixin gradientBlue {
+   background: $primaryColor;
+   background: -webkit-linear-gradient(to right, $textColor, $primaryColor);
+   background: linear-gradient(to right, $textColor, $primaryColor);
+}

@@ -118,3 +118,50 @@ body {
       }
    }
 }
+
+#about {
+   margin-top: 20vmax;
+   text-align: center;
+   
+   h1 {
+      padding-top: 2em;
+      font-weight: 600;
+      @include gradientBlue;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+   }
+
+   .row {
+      margin-top: 3em;
+
+      .col {
+         margin: 2rem;
+         padding: 1em 2.5em;
+         border-radius: 1.5rem;
+         border: 2px solid $primaryColor;
+
+         &:hover {
+            box-shadow: 5px 5px $tertiaryColor;
+            transition: 0.5s all ease-out;
+         }
+
+         img {
+            width: 100%;
+         }
+
+         p {
+            color: $textColor;
+            font-size: 0.9rem;
+            font-weight: 500;
+         }
+      }
+   }
+
+   .quotes {
+      margin-top: 3em;
+      font-weight: 500;
+      font-style: italic;
+   }
+}
