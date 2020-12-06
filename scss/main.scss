@@ -41,12 +41,16 @@ body {
             }
          }
       }
+
+      @media screen and (max-width: 992px) {
+         text-align: center;
+      }
    }
 }
 
 // custom section
 .custom-section {
-   margin-top: 14vmax;
+   margin-top: 16vmax;
 
    &::before {
       content: '';
@@ -62,38 +66,41 @@ body {
       bottom: 0;
    }
 
-   h2 {
-      font-weight: 800;
-      font-size: 4rem;
-      color: $textColor;
-      white-space: nowrap;
-      line-height: 0.8;
-   }
+   .teks {
+      margin-top: 5.7em;
+      h2 {
+         font-weight: 800;
+         font-size: 4rem;
+         color: $textColor;
+         white-space: nowrap;
+         line-height: 0.8;
+      }
 
-   h3 {
-      font-weight: 500;
-      font-size: 3.5rem;
-      color: $tertiaryColor;
-      line-height: 0.8;
-   }
+      h3 {
+         font-weight: 500;
+         font-size: 3.5rem;
+         color: $tertiaryColor;
+         line-height: 0.8;
+      }
 
-   p {
-      color: $textColor;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-top: 2.1em;
-   }
-   
-   a {
-      @include tombol;
-      margin-top: 2.2em;
-      border: 2px solid transparent;
-      transition: 0.5s ease;
+      p {
+         color: $textColor;
+         font-size: 0.9rem;
+         font-weight: 600;
+         margin-top: 2.1em;
+      }
 
-      &:hover {
-         color: $primaryColor;
-         border: 2px solid $tertiaryColor;
-         background-color: transparent;
+      a {
+         @include tombol;
+         margin-top: 2.2em;
+         border: 2px solid transparent;
+         transition: 0.5s ease;
+
+         &:hover {
+            color: $primaryColor;
+            border: 2px solid $tertiaryColor;
+            background-color: transparent;
+         }
       }
    }
 
@@ -120,20 +127,14 @@ body {
 }
 
 #about {
-   margin-top: 20vmax;
+   margin-top: 16vmax;
    text-align: center;
    
    h1 {
-      padding-top: 2em;
-      font-weight: 600;
-      @include gradientBlue;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
+      @include h1Blue;
    }
 
-   .row {
+   .ide {
       margin-top: 3em;
 
       .col {
@@ -160,8 +161,154 @@ body {
    }
 
    .quotes {
-      margin-top: 3em;
+      margin-top: 2em;
+      font-size: 2rem;
       font-weight: 500;
-      font-style: italic;
+      @include gradientBlue;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+   }
+
+   .tag {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+         @include tombol;
+         margin-top: 1em;
+         border: 2px solid transparent;
+         transition: 0.5s ease;
+         
+         &:hover {
+            color: $primaryColor;
+            border: 2px solid $tertiaryColor;
+            background-color: transparent;
+         }
+
+         @media screen and (max-width: 992px) {
+            padding: 0.2em 1em;
+         }
+      }
+      @media screen and (max-width: 992px) {
+         display: inline-block;
+         margin: 5px 5px 5px 5px;
+      }
+   }
+
+   @media screen and (max-width: 992px) {
+      margin-top: -5vmax;
+   }
+}
+
+#work {
+   margin-top: 5vmax;
+
+   .scrum {
+      padding-top: 7em;
+
+      img {
+         width: 100%;
+      }
+
+      .desc {
+         align-self: center;
+         h2 {
+            font-weight: 600;
+            @include gradientYellow();
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+         }
+
+         p {
+            padding-top: 0.5em;
+            text-align: justify;
+            color: $textColor;
+            font-weight: 500;
+         }
+
+         a {
+            @include tombolKuning;
+            margin-top: 0.5em;
+            border: 2px solid transparent;
+            transition: 0.5s ease;
+            font-weight: 600;
+
+            &:hover {
+               color: $secondaryColor;
+               border: 2px solid $secondaryColor;
+               background-color: transparent;
+            }
+         }
+      }
+   }
+
+   .why {
+      padding-top: 0.1em;
+
+      .prof {
+         margin: 2rem;
+         padding: 0.5em 1.5em;
+         border-radius: 1.5rem;
+         border: 1px solid $secondaryColor;
+         box-shadow: 2px 2px $secondaryColor;
+         text-align: center;
+
+         h1 {
+            @include gradientYellow();
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            font-size: 5em;
+            font-weight: 600;
+            font-family: arial;
+            margin-bottom: -13px;
+            quotes: "“""”""‘""’";
+            &:before {
+               content: open-quote;
+            }
+         }
+
+         p {
+            color: $textColor;
+            font-style: italic;
+            font-size: 0.9rem;
+         }
+
+         h2 {
+            @include gradientYellow();
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 1.5em;
+         }
+
+         h3 {
+            color: $textColor;
+            font-size: 1em;
+            font-weight: 500;
+         }
+      }
+
+      .reason {
+         margin-top: 2rem;
+         marquee {
+            // border-top: 2px solid $subColor;
+            // border-bottom: 2px solid $subColor;
+            padding: 0.5rem;
+            img {
+               max-width: 4.5rem;
+               margin-right: 2.5rem;
+               -webkit-filter: grayscale(100%);
+               filter: grayscale(100%);
+            }
+         }
+      }
    }
 }

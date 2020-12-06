@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800&display=swap");
 body {
   font-family: 'Montserrat', sans-serif;
@@ -32,8 +33,14 @@ body {
   color: #1fa5f8;
 }
 
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav {
+    text-align: center;
+  }
+}
+
 .custom-section {
-  margin-top: 14vmax;
+  margin-top: 16vmax;
 }
 
 .custom-section::before {
@@ -50,7 +57,11 @@ body {
   bottom: 0;
 }
 
-.custom-section h2 {
+.custom-section .teks {
+  margin-top: 5.7em;
+}
+
+.custom-section .teks h2 {
   font-weight: 800;
   font-size: 4rem;
   color: #142333;
@@ -58,21 +69,21 @@ body {
   line-height: 0.8;
 }
 
-.custom-section h3 {
+.custom-section .teks h3 {
   font-weight: 500;
   font-size: 3.5rem;
   color: #1fa5f8;
   line-height: 0.8;
 }
 
-.custom-section p {
+.custom-section .teks p {
   color: #142333;
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 2.1em;
 }
 
-.custom-section a {
+.custom-section .teks a {
   display: inline-block;
   color: white;
   background-color: #1fa5f8;
@@ -85,7 +96,7 @@ body {
   transition: 0.5s ease;
 }
 
-.custom-section a:hover {
+.custom-section .teks a:hover {
   color: #005fea;
   border: 2px solid #1fa5f8;
   background-color: transparent;
@@ -115,12 +126,12 @@ body {
 }
 
 #about {
-  margin-top: 20vmax;
+  margin-top: 16vmax;
   text-align: center;
 }
 
 #about h1 {
-  padding-top: 2em;
+  padding-top: 3.5em;
   font-weight: 600;
   background: #005fea;
   background: -webkit-gradient(linear, left top, right top, from(#142333), to(#005fea));
@@ -131,37 +142,220 @@ body {
   -moz-text-fill-color: transparent;
 }
 
-#about .row {
+#about .ide {
   margin-top: 3em;
 }
 
-#about .row .col {
+#about .ide .col {
   margin: 2rem;
   padding: 1em 2.5em;
   border-radius: 1.5rem;
   border: 2px solid #005fea;
 }
 
-#about .row .col:hover {
+#about .ide .col:hover {
   -webkit-box-shadow: 5px 5px #1fa5f8;
           box-shadow: 5px 5px #1fa5f8;
   -webkit-transition: 0.5s all ease-out;
   transition: 0.5s all ease-out;
 }
 
-#about .row .col img {
+#about .ide .col img {
   width: 100%;
 }
 
-#about .row .col p {
+#about .ide .col p {
   color: #142333;
   font-size: 0.9rem;
   font-weight: 500;
 }
 
 #about .quotes {
-  margin-top: 3em;
+  margin-top: 2em;
+  font-size: 2rem;
   font-weight: 500;
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, from(#142333), to(#005fea));
+  background: linear-gradient(to right, #142333, #005fea);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#about .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#about .tag a {
+  display: inline-block;
+  color: white;
+  background-color: #1fa5f8;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  margin-top: 1em;
+  border: 2px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#about .tag a:hover {
+  color: #005fea;
+  border: 2px solid #1fa5f8;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  #about .tag a {
+    padding: 0.2em 1em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about .tag {
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #about {
+    margin-top: -5vmax;
+  }
+}
+
+#work {
+  margin-top: 5vmax;
+}
+
+#work .scrum {
+  padding-top: 7em;
+}
+
+#work .scrum img {
+  width: 100%;
+}
+
+#work .scrum .desc {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#work .scrum .desc h2 {
+  font-weight: 600;
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #b68500), to(#fdc72f));
+  background: linear-gradient(to right, #b68500 30%, #fdc72f);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#work .scrum .desc p {
+  padding-top: 0.5em;
+  text-align: justify;
+  color: #142333;
+  font-weight: 500;
+}
+
+#work .scrum .desc a {
+  display: inline-block;
+  color: white;
+  background-color: #fdc72f;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  margin-top: 0.5em;
+  border: 2px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+
+#work .scrum .desc a:hover {
+  color: #fdc72f;
+  border: 2px solid #fdc72f;
+  background-color: transparent;
+}
+
+#work .why {
+  padding-top: 0.1em;
+}
+
+#work .why .prof {
+  margin: 2rem;
+  padding: 0.5em 1.5em;
+  border-radius: 1.5rem;
+  border: 1px solid #fdc72f;
+  -webkit-box-shadow: 2px 2px #fdc72f;
+          box-shadow: 2px 2px #fdc72f;
+  text-align: center;
+}
+
+#work .why .prof h1 {
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #b68500), to(#fdc72f));
+  background: linear-gradient(to right, #b68500 30%, #fdc72f);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 5em;
+  font-weight: 600;
+  font-family: arial;
+  margin-bottom: -13px;
+  quotes: "“" "”" "‘" "’";
+}
+
+#work .why .prof h1:before {
+  content: open-quote;
+}
+
+#work .why .prof p {
+  color: #142333;
   font-style: italic;
+  font-size: 0.9rem;
+}
+
+#work .why .prof h2 {
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #b68500), to(#fdc72f));
+  background: linear-gradient(to right, #b68500 30%, #fdc72f);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+
+#work .why .prof h3 {
+  color: #142333;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#work .why .reason {
+  margin-top: 2rem;
+}
+
+#work .why .reason marquee {
+  padding: 0.5rem;
+}
+
+#work .why .reason marquee img {
+  max-width: 4.5rem;
+  margin-right: 2.5rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 /*# sourceMappingURL=main.css.map */

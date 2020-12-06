@@ -13,14 +13,17 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" href="css/main.css">
 
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 	<link rel="icon" type="image/png" href="img/logo.png">
 	<title>Hello, Ideator!</title>
 </head>
 
 <body>
 
-	<div class="container my-4">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav bg-transparent">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light custom-nav bg-white">
+		<div class="container my-4">
 			<a class="navbar-brand" href="#">
 				<img src="img/logo.png" alt="Idea">
 				<span>Ideator</span>
@@ -31,7 +34,7 @@
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="#">Home</a>
 					</li>
 					<li class="nav-item">
@@ -48,12 +51,12 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
-	</div>
+		</div>
+	</nav>
 
 	<div class="container">
 		<div class="row custom-section">
-			<div class="col-12 col-lg-4">
+			<div class="col-12 col-lg-4 teks">
 				<h2>Team Work</h2>
 				<h3>Process</h3>
 				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, velit.</p>
@@ -64,7 +67,7 @@
 
 	<div class="container" id="about">
 		<h1>You need a design idea?</h1>
-		<div class="row">
+		<div class="row ide">
 			<div class="col">
 				<img src="img/cc.png">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -78,15 +81,78 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 			</div>
 		</div>
-		<p class="quotes"><q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus dicta nihil blanditiis
-				aspernatur laudantium tenetur possimus debitis, minima, et corrupti aperiam dolorem laborum, veritatis
-				libero. Error reprehenderit atque repellat aspernatur.</q></p>
+		<p class="quotes">Popular #Tags</p>
+		<div class="row tag">
+			<a href="#">Software</a>
+			<a href="#">Technology</a>
+			<a href="#">Travel</a>
+			<a href="#">Illustration</a>
+			<a href="#">Design</a>
+			<a href="#">Lifestyle</a>
+			<a href="#">Love</a>
+			<a href="#">Project</a>
+			<a href="#">Webite</a>
+			<a href="#">Business</a>
+			<a href="#">Hobby</a>
+			<a href="#">Photography</a>
+			<a href="#">Algorithm</a>
+			<a href="#">Food</a>
+			<a href="#">Statistics</a>
+			<a href="#">Fashion</a>
+			<!-- <a href="#">healthy</a>
+			<a href="#">Documentation</a>
+			<a href="#">Research</a>
+			<a href="#">Drama</a>
+			<a href="#">Chart</a>
+			<a href="#">Gadget</a>
+			<a href="#">E-Commerce</a>
+			<a href="#">Management</a>
+			<a href="#">IOT</a>
+			<a href="#">Development</a> -->
+		</div>
 	</div>
 
+	<div class="container" id="work">
+		<div class="row scrum">
+			<div class="col">
+				<img src="img/ts.png">
+			</div>
+			<div class="col desc">
+				<h2>Scrum for Software Development</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo delectus nisi blanditiis nemo voluptatum
+					vero neque aperiam animi iusto minus.</p>
+				<a href="#">Get Started <i class="fas fa-angle-double-right"></i></a>
+			</div>
+		</div>
+		<div class="row why">
+			<div class="col-sm-12 col-lg-3 prof">
+				<h1></h1>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, ratione.</p>
+				<h2>Full Name</h2>
+				<h3>Professional Software Developer</h3>
+			</div>
+			<div class="col-sm-12 col-lg-8 reason">
+				<marquee scrollamount=5>
+					<img src="img/html5.png">
+					<img src="img/css3.png">
+					<img src="img/js.png">
+					<img src="img/ci.png">
+					<img src="img/laravel8.png">
+					<img src="img/materializecss.png">
+					<img src="img/MySQL.png">
+					<img src="img/Lucidchart.png">
+					<img src="img/marvel.png">
+					<img src="img/VsCode.png">
+					<img src="img/hostinger.png">
+				</marquee>
+			</div>
+		</div>
+	</div>
+
+
+
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
 	</script>

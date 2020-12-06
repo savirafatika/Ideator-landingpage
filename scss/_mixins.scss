@@ -8,8 +8,43 @@
    text-decoration: none;
 }
 
+@mixin tombolKuning {
+   display: inline-block;
+   color: white;
+   background-color: $secondaryColor;
+   border-radius: 2em;
+   padding: 0.5em 2em;
+   text-decoration: none;
+}
+
 @mixin gradientBlue {
    background: $primaryColor;
    background: -webkit-linear-gradient(to right, $textColor, $primaryColor);
    background: linear-gradient(to right, $textColor, $primaryColor);
+}
+
+@mixin gradientYellow {
+   background: $primaryColor;
+   background: -webkit-linear-gradient(to right, #b68500 30%, $secondaryColor);
+   background: linear-gradient(to right, #b68500 30%, $secondaryColor);
+}
+
+@mixin h1Blue {
+   padding-top: 3.5em;
+   font-weight: 600;
+   @include gradientBlue();
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+
+@mixin h1Yellow {
+   padding-top: 3.5em;
+   font-weight: 600;
+   @include gradientYellow();
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
 }
