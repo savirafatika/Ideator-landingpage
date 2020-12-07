@@ -286,6 +286,16 @@ body {
   background-color: transparent;
 }
 
+@media screen and (max-width: 992px) {
+  #work .scrum .desc {
+    text-align: center;
+  }
+  #work .scrum .desc p {
+    text-align: center;
+    margin: 1em 1em;
+  }
+}
+
 #work .why {
   padding-top: 0.1em;
 }
@@ -339,7 +349,7 @@ body {
 }
 
 #work .why .prof h3 {
-  color: #142333;
+  color: #b68500;
   font-size: 1em;
   font-weight: 500;
 }
@@ -357,5 +367,77 @@ body {
   margin-right: 2.5rem;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+#work .why .reason .method {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2rem;
+  height: 14em;
+  color: #b68500;
+  font-size: 1.3rem;
+}
+
+#work .why .reason .method i {
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #b68500), to(#fdc72f));
+  background: linear-gradient(to right, #b68500 30%, #fdc72f);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+#work .why .reason .method p {
+  font-size: 1rem;
+  color: #142333;
+  margin-top: 7px;
+  list-style-type: none;
+}
+
+#info {
+  margin-top: 4vmax;
+  margin-bottom: 1vmax;
+}
+
+#info .hiring {
+  padding-top: 7em;
+}
+
+#info .hiring .rec {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#info .hiring .rec h1 {
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, from(#142333), to(#005fea));
+  background: linear-gradient(to right, #142333, #005fea);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#info .hiring .rec p {
+  color: #005fea;
+}
+
+#info .hiring .rec ul {
+  margin-left: -1.2em;
+}
+
+#info .hiring .rec ul .yes {
+  max-width: 1.2em;
+  float: right;
+}
+
+#info .hiring img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
