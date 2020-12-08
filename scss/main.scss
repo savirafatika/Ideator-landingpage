@@ -50,24 +50,15 @@ body {
 
 // custom section
 .custom-section {
-   margin-top: 16vmax;
-
-   &::before {
-      content: '';
-      background-image: url(../img/bg.png);
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: 48vmax;
-      background-position-y: 8vmax;
-      position: absolute;
-      top: 4.5vmax;
-      left: 0;
-      right: 12vmax;
-      bottom: 0;
-   }
+   margin-top: 10vmax;
+   background: url(../img/bg.png);
+   background-position: top right;
+   background-repeat: no-repeat;
+   background-size: 55vmax;
+   height: 650px;
+   align-items: center;
 
    .teks {
-      margin-top: 5.7em;
       h2 {
          font-weight: 800;
          font-size: 4rem;
@@ -105,29 +96,41 @@ body {
    }
 
    @media screen and (max-width: 1200px) {
-      margin-top: 6em;
+      margin-top: 11vmax;
+      background-size: 49vmax;
+      height: 450px;
    }
 
    @media screen and (max-width: 992px) {
-      &::before {
-         top: 3.5vmax;
-         right: 4vmax;
-         opacity: 0.5;
-      }
-
-      margin-top: 3.3em;
+      background-position: top center;
+      background-size: 51vmax;
+      margin-top: 13vmax;
       text-align: center;
 
-      h2,
-      h3,
-      p {
-         text-shadow: 1px 1px 1px rgba($textColor, 0.4);
+      .teks {
+         background: rgba(255, 255, 255, 0.5);
+         margin-top: -9vmax;
+         height: 380px;
+
+         h2 {
+            margin-top: 8vmax;
+         }
+
+         h2,
+         h3,
+         p {
+            text-shadow: 1px 1px 1px rgba($textColor, 0.4);
+         }
+         a{
+            margin-top: 3.5em;
+            margin-bottom: 0.5em;
+         }
       }
    }
 }
 
 #about {
-   margin-top: 16vmax;
+   margin-top: 6vmax;
    text-align: center;
    
    h1 {
@@ -171,41 +174,37 @@ body {
       -moz-text-fill-color: transparent;
    }
 
-   .tag {
-      display: flex;
-      justify-content: space-evenly;
-      a {
-         @include tombol;
-         margin-top: 1em;
-         border: 2px solid transparent;
-         transition: 0.5s ease;
+   a {
+      @include tombol;
+      margin-top: 1em;
+      border: 2px solid transparent;
+      transition: 0.5s ease;
          
-         &:hover {
-            color: $primaryColor;
-            border: 2px solid $tertiaryColor;
-            background-color: transparent;
-         }
-
-         @media screen and (max-width: 992px) {
-            padding: 0.2em 1em;
-         }
+      &:hover {
+         color: $primaryColor;
+         border: 2px solid $tertiaryColor;
+         background-color: transparent;
       }
+
       @media screen and (max-width: 992px) {
-         display: inline-block;
-         margin: 5px 5px 5px 5px;
+         padding: 0.2em 1em;
       }
    }
 
+   @media screen and (max-width: 1200px) {
+      margin-top: -7vmax;
+   }
+
    @media screen and (max-width: 992px) {
-      margin-top: -5vmax;
+      margin-top: -10vmax;
    }
 }
 
 #work {
-   margin-top: 5vmax;
+   margin-top: 7.5vmax;
 
    .scrum {
-      padding-top: 7em;
+      padding-top: 4em;
 
       img {
          width: 100%;
@@ -235,6 +234,7 @@ body {
             border: 2px solid transparent;
             transition: 0.5s ease;
             font-weight: 600;
+            margin-bottom: 1.5em;
 
             &:hover {
                color: $secondaryColor;
@@ -244,6 +244,7 @@ body {
          }
          @media screen and (max-width: 992px) {
             text-align: center;
+            align-content: center;
 
             p {
                text-align: center;
@@ -258,7 +259,7 @@ body {
 
       .prof {
          margin: 2rem;
-         padding: 0.5em 1.5em;
+         padding: 1em 1.5em;
          border-radius: 1.5rem;
          border: 1px solid $secondaryColor;
          box-shadow: 2px 2px $secondaryColor;
@@ -301,6 +302,10 @@ body {
             color: #b68500;
             font-size: 1em;
             font-weight: 500;
+         }
+
+         @media screen and (max-width: 992px) {
+            margin: 0;
          }
       }
 
@@ -367,7 +372,7 @@ body {
             color: $primaryColor;
          }
          ul {
-            margin-left: -1.2em;
+            margin-left: -0.8em;
             .yes {
                max-width: 1.2em;
                float: right;
@@ -378,5 +383,29 @@ body {
       img {
          width: 100%;
       }
+
+      @media screen and (max-width: 992px) {
+         padding-top: 40vmax;
+         .rec {
+            padding: 2em 2em;
+            h1, h5 {
+               text-align: center;
+            }
+            h5 {
+               margin-bottom: 1em;
+            }
+         }
+      }
+   }
+}
+
+#contact {
+   margin: 2em;
+   .form {
+      background-color: $subColor;
+   }
+
+   .general {
+      background-color: $tertiaryColor;
    }
 }
