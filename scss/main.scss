@@ -76,16 +76,21 @@ body {
 
       p {
          color: $textColor;
-         font-size: 0.9rem;
+         font-size: 1rem;
          font-weight: 600;
-         margin-top: 2.1em;
+         margin-top: 1em;
       }
 
       a {
          @include tombol;
-         margin-top: 2.2em;
+         margin-top: 1em;
          border: 2px solid transparent;
          transition: 0.5s ease;
+         font-weight: 600;
+
+         i {
+            margin-top: 6px;
+         }
 
          &:hover {
             color: $primaryColor;
@@ -130,7 +135,7 @@ body {
 }
 
 #about {
-   margin-top: 6vmax;
+   margin-top: 0.3vmax;
    text-align: center;
    
    h1 {
@@ -201,7 +206,7 @@ body {
 }
 
 #work {
-   margin-top: 7.5vmax;
+   margin-top: 2.5vmax;
 
    .scrum {
       padding-top: 4em;
@@ -235,6 +240,10 @@ body {
             transition: 0.5s ease;
             font-weight: 600;
             margin-bottom: 1.5em;
+
+            i {
+               margin-top: 3px;
+            }
 
             &:hover {
                color: $secondaryColor;
@@ -353,10 +362,11 @@ body {
 }
 
 #info {
-   margin-top: 4vmax;
+   margin-top: -2vmax;
    margin-bottom: 1vmax;
 
    .hiring {
+      margin: 0.5rem;
       padding-top: 7em;
 
       .rec {
@@ -400,12 +410,193 @@ body {
 }
 
 #contact {
-   margin: 2em;
-   .form {
-      background-color: $subColor;
+   margin-top: 1vmax;
+   margin-bottom: 1vmax;
+
+   .contactus {
+      margin: 1.2rem;
+      padding-top: 7em;
+
+      h1 {
+         text-align: center;
+         margin-bottom: 1em;
+         @include gradientBlue;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         -moz-text-fill-color: transparent;
+      }
+
+      .form-contact {
+         padding: 2.5em 2.5em;
+         border-radius: 1.5rem;
+         border: 2px solid $primaryColor;
+
+         h4 {
+            margin-bottom: 0.5em;
+            color: $primaryColor;
+         }
+
+         .send {
+            padding: 0.5em 1.5em;
+            .fa-arrow-alt-circle-right {
+               margin-left: 0.3em;
+            }
+         }
+      }
+   
+      .general {
+         .email {
+            padding: 2em 2em;
+            border-radius: 1.5rem;
+            text-align: center;
+            color: white;
+            margin-left: 1.5rem;
+            background-color: $tertiaryColor;
+
+            i {
+               font-size: 2.5em;
+            }
+
+            h3 {
+               margin-top: 1.2rem;
+               font-weight: 700;
+               font-size: 1.5rem;
+            }
+
+            h5 {
+               font-size: 1.2rem;
+            }
+
+            @media screen and (max-width: 992px) {
+               margin-left: 0;
+               margin-top: 1.5rem;
+            }
+         }
+
+         .personal {
+            padding: 2em 2em;
+            margin-left: 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 1.5rem;
+            border: 2px solid $primaryColor;
+
+            @media screen and (max-width: 992px) {
+               margin-left: 0;
+            }
+         }
+      }
+   }
+}
+
+footer {
+   color: $primaryColor;
+   margin-top: 4rem;
+   margin-bottom: 1rem;
+
+   .brd {
+   text-align: right;
+      .brand {
+         color: $primaryColor;
+         font-weight: 700;
+         font-size: 1.6rem;
+         text-transform: uppercase;
+         text-decoration: none;
+         margin-left: 0.3em;
+      }
    }
 
-   .general {
-      background-color: $tertiaryColor;
+   .website_rights {
+      text-align: center;
+      font-size: 1.2rem;
+
+      .rights {
+         margin-top: 6px;
+      }
+   }
+
+   .social_icons {
+      font-size: 1.6rem;
+   }
+
+   @media screen and (max-width: 992px) {
+      .brd {
+         text-align: center;
+      }
+
+      .social_icons {
+         text-align: center;
+      }
+   }
+}
+
+#back-to-top-btn {
+   display: none;
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   width: 50px;
+   height: 50px;
+   font-size: large;
+   background-color: $tertiaryColor;
+   cursor: pointer;
+   outline: none;
+   box-shadow: 0 0 10px rgba(56, 56, 56, 0.5);
+   color: #ffffff;
+   border: none;
+   border-radius: 50%;
+   transition-duration: 0.2s;
+   transition-timing-function: ease-in-out;
+   transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+   background-color: $primaryColor;
+   color: #fff;
+}
+
+.btnEntrance {
+   animation-duration: 0.5s;
+   animation-fill-mode: both;
+   animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+   from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+   }
+
+   to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.btnExit {
+   animation-duration: 0.25s;
+   animation-fill-mode: both;
+   animation-name: btnExit;
+}
+
+@keyframes btnExit {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+   }
+}
+
+@media screen and (max-width: 460px) {
+   #back-to-top-btn {
+      bottom: 25px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      font-size: small;
    }
 }

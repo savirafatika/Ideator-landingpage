@@ -68,9 +68,9 @@ body {
 
 .custom-section .teks p {
   color: #142333;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-top: 2.1em;
+  margin-top: 1em;
 }
 
 .custom-section .teks a {
@@ -80,10 +80,15 @@ body {
   border-radius: 2em;
   padding: 0.5em 2em;
   text-decoration: none;
-  margin-top: 2.2em;
+  margin-top: 1em;
   border: 2px solid transparent;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  font-weight: 600;
+}
+
+.custom-section .teks a i {
+  margin-top: 6px;
 }
 
 .custom-section .teks a:hover {
@@ -127,7 +132,7 @@ body {
 }
 
 #about {
-  margin-top: 6vmax;
+  margin-top: 0.3vmax;
   text-align: center;
 }
 
@@ -222,7 +227,7 @@ body {
 }
 
 #work {
-  margin-top: 7.5vmax;
+  margin-top: 2.5vmax;
 }
 
 #work .scrum {
@@ -270,6 +275,10 @@ body {
   transition: 0.5s ease;
   font-weight: 600;
   margin-bottom: 1.5em;
+}
+
+#work .scrum .desc a i {
+  margin-top: 3px;
 }
 
 #work .scrum .desc a:hover {
@@ -400,11 +409,12 @@ body {
 }
 
 #info {
-  margin-top: 4vmax;
+  margin-top: -2vmax;
   margin-bottom: 1vmax;
 }
 
 #info .hiring {
+  margin: 0.5rem;
   padding-top: 7em;
 }
 
@@ -457,14 +467,234 @@ body {
 }
 
 #contact {
-  margin: 2em;
+  margin-top: 1vmax;
+  margin-bottom: 1vmax;
 }
 
-#contact .form {
-  background-color: #EEF0F1;
+#contact .contactus {
+  margin: 1.2rem;
+  padding-top: 7em;
 }
 
-#contact .general {
+#contact .contactus h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  background: #005fea;
+  background: -webkit-gradient(linear, left top, right top, from(#142333), to(#005fea));
+  background: linear-gradient(to right, #142333, #005fea);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#contact .contactus .form-contact {
+  padding: 2.5em 2.5em;
+  border-radius: 1.5rem;
+  border: 2px solid #005fea;
+}
+
+#contact .contactus .form-contact h4 {
+  margin-bottom: 0.5em;
+  color: #005fea;
+}
+
+#contact .contactus .form-contact .send {
+  padding: 0.5em 1.5em;
+}
+
+#contact .contactus .form-contact .send .fa-arrow-alt-circle-right {
+  margin-left: 0.3em;
+}
+
+#contact .contactus .general .email {
+  padding: 2em 2em;
+  border-radius: 1.5rem;
+  text-align: center;
+  color: white;
+  margin-left: 1.5rem;
   background-color: #1fa5f8;
+}
+
+#contact .contactus .general .email i {
+  font-size: 2.5em;
+}
+
+#contact .contactus .general .email h3 {
+  margin-top: 1.2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#contact .contactus .general .email h5 {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  #contact .contactus .general .email {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+#contact .contactus .general .personal {
+  padding: 2em 2em;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 1.5rem;
+  border: 2px solid #005fea;
+}
+
+@media screen and (max-width: 992px) {
+  #contact .contactus .general .personal {
+    margin-left: 0;
+  }
+}
+
+footer {
+  color: #005fea;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+footer .brd {
+  text-align: right;
+}
+
+footer .brd .brand {
+  color: #005fea;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 0.3em;
+}
+
+footer .website_rights {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer .website_rights .rights {
+  margin-top: 6px;
+}
+
+footer .social_icons {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 992px) {
+  footer .brd {
+    text-align: center;
+  }
+  footer .social_icons {
+    text-align: center;
+  }
+}
+
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: large;
+  background-color: #1fa5f8;
+  cursor: pointer;
+  outline: none;
+  -webkit-box-shadow: 0 0 10px rgba(56, 56, 56, 0.5);
+          box-shadow: 0 0 10px rgba(56, 56, 56, 0.5);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: #005fea;
+  color: #fff;
+}
+
+.btnEntrance {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: btnEntrance;
+          animation-name: btnEntrance;
+}
+
+@-webkit-keyframes btnEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: btnExit;
+          animation-name: btnExit;
+}
+
+@-webkit-keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #back-to-top-btn {
+    bottom: 25px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: small;
+  }
 }
 /*# sourceMappingURL=main.css.map */

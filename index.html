@@ -60,7 +60,7 @@
 				<h2>Team Work</h2>
 				<h3>Process</h3>
 				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, velit.</p>
-				<a href="#">Learn more</a>
+				<a href="#">Learn more <i class="fas fa-angle-double-right"></i></a>
 			</div>
 		</div>
 	</div>
@@ -183,11 +183,76 @@
 	</div>
 
 	<div class="container" id="contact">
-		<div class="row">
-			<div class="col-12 col-lg-8 form"></div>
-			<div class="col-12 col-lg-4 general"></div>
+		<div class="row contactus">
+			<h1>You need to work with us?</h1>
+			<div class="col-12 col-lg-8 form-contact">
+				<h4>Please fill out this form!</h4>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="floatingInput" placeholder="John Doe">
+					<label for="floatingInput">Full Name</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+					<label for="floatingInput">Email address</label>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="floatingInput" placeholder="082121353568">
+					<label for="floatingInput">Phone Number</label>
+				</div>
+				<div class="form-floating mb-3">
+					<textarea rows="6" class="form-control" id="floatingInput"
+						placeholder="I need you to work with us"></textarea>
+					<label for="floatingInput">Message</label>
+				</div>
+				<div class="form-floating">
+					<button class="btn btn-primary send" type="submit">Send <i
+							class="fas fa-arrow-alt-circle-right"></i></button>
+				</div>
+			</div>
+			<div class="col-12 col-lg-4 general">
+				<div class="row">
+					<div class="col-12 email">
+						<i class="fas fa-envelope"></i>
+						<h3>Contact Us</h3>
+						<h5>john.doe@email.com</h5>
+					</div>
+					<div class="col-12 personal">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">(0293) 000000</li>
+							<li class="list-group-item">St. Hypertext Markup Language No.0</li>
+							<li class="list-group-item">City Hypertext Transfer Protocol</li>
+							<li class="list-group-item">Province world wide web, Country 50123</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<footer class="container">
+		<div class="row">
+			<div class="col-12 col-lg-3 brd">
+				<a class="brand" href="#">Ideator</a>
+			</div>
+			<div class="col-12 col-lg-6 website_rights">
+				<p class="rights"> © Ideator 2020. All rights reserved</p>
+			</div>
+			<div class="col-12 col-lg-3 social_icons">
+				<a href="#" class="social_icon-link" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="#" class="social_icon-link"><i class="fab fa-instagram"></i></a>
+				<a href="#" class="social_icon-link"><i class="fab fa-youtube"></i></a>
+				<a href="#" class="social_icon-link"><i class="fab fa-linkedin"></i></a>
+				<a href="#" class="social_icon-link"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<button id="back-to-top-btn">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+
+	<!-- My Script -->
+	<script src="js/script.js"></script>
 
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
